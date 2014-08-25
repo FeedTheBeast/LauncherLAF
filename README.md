@@ -40,7 +40,7 @@ Updating your fork
 
 Before submitting a pull request, you should ensure that your fork is up to date. To do this, run these commands:
 
-git remote add upstream git://github.com/Slowpoke101/FTBLaunch.git
+git remote add upstream git://github.com/FeedTheBeast/LauncherLAF.git
 git pull --rebase upstream master
 git push --force origin <branch_name>
 The first command is only necessary the first time. If you have issues merging, you will need to get a merge tool such as P4Merge. Once it is set up, run git mergetool. Once all conflicts are fixed, run git rebase --continue, and git push --force origin <branch_name>.
