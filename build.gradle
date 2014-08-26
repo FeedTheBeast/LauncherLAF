@@ -50,6 +50,15 @@ jar {
     }
 }
 
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allJava
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
+
 def gitSha() {
     return 'git rev-parse HEAD'.execute().text.trim()
 }
