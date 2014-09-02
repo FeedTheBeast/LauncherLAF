@@ -1,4 +1,4 @@
-package net.ftb.laf.utils;
+package net.ftb.ui.utils;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;

@@ -1,6 +1,6 @@
-package net.ftb.laf.comp;
+package net.ftb.ui;
 
-import net.ftb.laf.utils.UIUtils;
+import net.ftb.ui.utils.UIUtils;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
