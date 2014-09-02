@@ -1,7 +1,5 @@
 package net.ftb.laf;
 
-import javafx.geometry.Side;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -37,5 +35,9 @@ extends JFrame{
                 new Main().setVisible(true);
             }
         });
+    }
+
+    private static enum Side{
+        TOP, LEFT, BOTTOM, RIGHT
     }
 }

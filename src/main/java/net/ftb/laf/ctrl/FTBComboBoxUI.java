@@ -2,7 +2,6 @@ package net.ftb.laf.ctrl;
 
 import net.ftb.laf.FTBArrowButton;
 
-import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.plaf.ComponentUI;
@@ -18,7 +17,6 @@ extends BasicComboBoxUI{
     @Override
     public void installUI(JComponent comp){
         super.installUI(comp);
-        comp.setForeground(Color.white);
     }
 
     @Override
