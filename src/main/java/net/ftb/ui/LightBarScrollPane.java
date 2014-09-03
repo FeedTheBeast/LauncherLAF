@@ -38,6 +38,8 @@ extends JComponent{
         verticalScrollBar.setOpaque(false);
         verticalScrollBar.setUI(new MyScrollBarUI());
 
+        this.verticalScrollBar.setBlockIncrement(16);
+
         horizontalScrollBar = scrollPane.getHorizontalScrollBar();
         horizontalScrollBar.setVisible(false);
         horizontalScrollBar.setOpaque(false);
