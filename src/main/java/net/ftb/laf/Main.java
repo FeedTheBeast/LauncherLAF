@@ -5,7 +5,9 @@ import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
+import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
@@ -27,6 +29,7 @@ extends JFrame{
         this.setResizable(false);
         this.getContentPane().setLayout(new BorderLayout());
         JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JPanel(), new JPanel());
+        splitter.setLeftComponent(new JScrollPane(new JTextArea()));
         this.getContentPane().add(splitter, BorderLayout.CENTER);
     }
 
