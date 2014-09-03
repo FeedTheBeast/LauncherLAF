@@ -1,10 +1,11 @@
 package net.ftb.laf;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
@@ -24,8 +25,9 @@ extends JFrame{
         this.setMinimumSize(new Dimension(830, 500));
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setResizable(false);
-        this.getContentPane().setLayout(new FlowLayout(FlowLayout.CENTER));
-        this.getContentPane().add(new JComboBox<Side>(Side.values()));
+        this.getContentPane().setLayout(new BorderLayout());
+        JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JPanel(), new JPanel());
+        this.getContentPane().add(splitter, BorderLayout.CENTER);
     }
 
     public static void main(String... args){

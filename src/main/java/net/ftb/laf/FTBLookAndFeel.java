@@ -2,6 +2,7 @@ package net.ftb.laf;
 
 import net.ftb.laf.button.FTBButtonUI;
 import net.ftb.laf.button.FTBToggleButtonUI;
+import net.ftb.laf.container.FTBSplitPaneUI;
 import net.ftb.laf.ctrl.FTBComboBoxUI;
 import net.ftb.ui.utils.UIUtils;
 
@@ -32,6 +33,9 @@ extends MetalLookAndFeel{
 
         // Control
         table.put("ComboBoxUI", FTBComboBoxUI.class.getCanonicalName());
+
+        // Container
+        table.put("SplitPaneUI", FTBSplitPaneUI.class.getCanonicalName());
     }
 
     @Override
