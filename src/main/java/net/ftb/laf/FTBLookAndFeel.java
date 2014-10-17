@@ -2,8 +2,11 @@ package net.ftb.laf;
 
 import net.ftb.laf.button.FTBButtonUI;
 import net.ftb.laf.button.FTBToggleButtonUI;
+import net.ftb.laf.container.FTBScrollPaneUI;
 import net.ftb.laf.container.FTBSplitPaneUI;
 import net.ftb.laf.ctrl.FTBComboBoxUI;
+import net.ftb.laf.ctrl.FTBScrollBarUI;
+import net.ftb.laf.output.FTBProgressBarUI;
 import net.ftb.ui.utils.UIUtils;
 
 import java.awt.Color;
@@ -33,9 +36,14 @@ extends MetalLookAndFeel{
 
         // Control
         table.put("ComboBoxUI", FTBComboBoxUI.class.getCanonicalName());
+        table.put("ScrollBarUI", FTBScrollBarUI.class.getCanonicalName());
+
+        // Output
+        table.put("ProgressBarUI", FTBProgressBarUI.class.getCanonicalName());
 
         // Container
         table.put("SplitPaneUI", FTBSplitPaneUI.class.getCanonicalName());
+        table.put("ScrollPaneUI", FTBScrollPaneUI.class.getCanonicalName());
     }
 
     @Override
