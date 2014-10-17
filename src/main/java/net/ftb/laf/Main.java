@@ -3,8 +3,10 @@ package net.ftb.laf;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
@@ -30,6 +32,14 @@ extends JFrame{
         this.getContentPane().setLayout(new BorderLayout());
         JSplitPane splitter = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, new JPanel(), new JPanel());
         splitter.setLeftComponent(new JScrollPane(new JTextArea()));
+        splitter.setRightComponent(new JPanel(new FlowLayout(FlowLayout.CENTER)){
+            JProgressBar bar = new JProgressBar(0, 100);
+
+            {
+                this.bar.setValue(50);
+                this.add(this.bar);
+            }
+        });
         this.getContentPane().add(splitter, BorderLayout.CENTER);
     }
 
